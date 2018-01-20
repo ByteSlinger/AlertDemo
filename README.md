@@ -1,5 +1,5 @@
 # AlertDemo
-iOS Swift UIAlertController with UIControl to dismiss on tap
+Sample iOS Swift App that uses a UIAlertController with UIControl to dismiss on user taps or timeout.
 
 Here are the screenshots from the app:
 
@@ -33,7 +33,7 @@ I selected my iPhones to build and deploy to.  I did not try to test in the Xcod
 
 ## Code Highlights
 * I use a **UIControl** that sits on top of the alert and responds to any touch event, to dismiss the alert
-* It is important to set the frame properly on the UIControl - the bounds on the alert or the superview works the best
+* It is important to set the frame properly on the UIControl - the bounds on the alert view or superview works the best
 * I needed **NSObject.cancelPreviousPerformRequests(withTarget: self)** to cancel existing perform requests to be sure that previous timed dismiss attempts did not accidentally dismiss other alerts.  This was noticable when you go through the app quickly, tapping buttons, and right away tapping the alerts.
 
 ## Usage
