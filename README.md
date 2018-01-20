@@ -3,7 +3,7 @@ iOS Swift UIAlertController with UIControl to dismiss on tap
 
 Here are the screenshots from the app:
 
-<img src="" />
+<img src="https://user-images.githubusercontent.com/2251646/35188966-f1c01dd0-fdf5-11e7-8653-ef18b4173191.png" />
 
 ## Overview
 I needed alert notifications similar to the Android Toast functionality (alert popups WITHOUT action buttons).  There are GitHub repos with iOS frameworks that behave similar to the Android Toast, but I wanted something simple that uses the native iOS code.  Also I wanted to be able to dismiss the alert popups by tapping on them OR timing out.  This app demonstrates 4 ways to dismiss an alert popup:
@@ -37,7 +37,7 @@ I selected my iPhones to build and deploy to.  I did not try to test in the Xcod
 * I needed **NSObject.cancelPreviousPerformRequests(withTarget: self)** to cancel existing perform requests to be sure that previous timed dismiss attempts did not accidentally dismiss other alerts.  This was noticable when you go through the app quickly, tapping buttons, and right away tapping the alerts.
 
 ## Usage
-Everything is done in [ViewController.swift](./ViewController.swift).  You will need to cut-and-paste from there into your own project.
+Everything is done in [ViewController.swift](./AlertDemo/ViewController.swift).  You will need to cut-and-paste from there into your own project.
 
 ## Author
 
